@@ -1,0 +1,83 @@
+/* ********** FONTS ********** */
+
+.nerko-one-regular {
+  font-family: "Nerko One", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/*  ************** CSS RESET ************ */
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* *************** UTILS **************** */
+
+.container {
+  padding: 1.5rem;
+  max-width: 1080px;
+}
+
+/* ************* GENERALS *************** */
+
+header {
+  height: 72px;
+  background-color: white;
+
+  font-size: 26px;
+  font-family: "Nerko One";
+  line-height: 72px;
+  vertical-align: 72px;
+  color: rgb(255, 145, 0);
+  text-shadow: 0.5px 0.5px 1px rgb(90, 90, 90);
+
+  text-align: center;
+
+  /* debug */
+  /* border: 1px dashed red; */
+}
+
+main {
+  font-family: "montserrat";
+  font-weight: 100;
+  background-color: #efefef;
+}
+
+h6 {
+  font-size: 14px;
+  font-weight: 100;
+  color: rgb(61, 61, 61);
+}
+
+h2 {
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(42, 25, 58);
+
+  padding-top: 0.6rem;
+  padding-bottom: 1rem;
+}
+
+/** RESPOSIVE SMALL ---> UNTIL 480PX  **/
+
+/** RESPOSIVE SMALL+ ---> UNTIL 576PX  **/
+
+/** RESPOSIVE MEDIUM ---> UNTIL 768PX  **/
+
+/** RESPOSIVE LARGE ---> UNTIL 992PX  **/
