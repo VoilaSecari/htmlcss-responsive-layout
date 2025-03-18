@@ -27,12 +27,18 @@ ul {
   list-style-type: none;
 }
 
+a {
+  color: white;
+}
+
 /* *************** UTILS **************** */
 
 .container {
   padding: 1.5rem;
   max-width: 1080px;
 }
+
+/** RESPOSIVE SMALL ---> UNTIL 480PX  **/
 
 /* ************* GENERALS *************** */
 
@@ -65,13 +71,17 @@ main {
 
 /* ******** CARD ******** */
 
-h6 {
+.tradizionale {
+  display: none;
+}
+
+.container > h6 {
   font-size: 14px;
   font-weight: 100;
   color: rgb(61, 61, 61);
 }
 
-h2 {
+.container > h2 {
   font-size: 23px;
   font-weight: 700;
   color: rgb(42, 25, 58);
@@ -117,6 +127,7 @@ h2 {
 
 .icone * {
   margin: 0;
+  text-align: center;
 }
 
 .btn {
@@ -157,7 +168,7 @@ h2 {
 /* ADV */
 
 .adv {
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 
   /* DA CAMBIARE X TABLET --- display block */
   display: none;
@@ -192,10 +203,142 @@ h2 {
   padding-bottom: 1.5rem;
 }
 
-/** RESPOSIVE SMALL ---> UNTIL 480PX  **/
+/********** FOOTER *********/
+
+footer {
+  font-family: "Montserrat";
+  background-color: rgb(121, 106, 160);
+  color: white;
+  text-align: center;
+  display: block;
+
+  padding: 1.5rem;
+}
+
+footer .contatti,
+footer .links {
+  display: block;
+}
+
+footer .contatti h6 {
+  font-size: 16px;
+
+  padding-bottom: 0.4rem;
+}
+
+footer .contatti p {
+  padding-bottom: 1rem;
+  font-weight: 200;
+}
+
+footer .links ul li {
+  display: inline-block;
+  font-weight: 200;
+  padding: 0.3rem 1rem;
+}
 
 /** RESPOSIVE SMALL+ ---> UNTIL 576PX  **/
 
+@media screen and (min-width: 576px) {
+  .foto-ricetta {
+    float: left;
+    margin: 0.6rem 1.5rem 1.5rem 0;
+  }
+
+  .ricetta hr {
+    margin-bottom: 1rem;
+  }
+
+  .icone * {
+    min-width: 50px;
+  }
+}
+
 /** RESPOSIVE MEDIUM ---> UNTIL 768PX  **/
 
+@media screen and (min-width: 768px) {
+  .adv {
+    display: block;
+  }
+
+  header {
+    text-align: left;
+    padding: 0 1.5rem;
+  }
+
+  .icone * {
+    min-width: 80px;
+  }
+
+  .card-bottom ul > li {
+    width: calc(100% / 3.1);
+  }
+
+  .tradizionale {
+    display: inline-block;
+  }
+
+  .container > h2 {
+    font-size: 30px;
+  }
+}
+
 /** RESPOSIVE LARGE ---> UNTIL 992PX  **/
+
+@media screen and (min-width: 992px) {
+  .card {
+    display: flex;
+  }
+
+  .card > .card-top > img {
+    width: 740px;
+    display: block;
+  }
+
+  .card-bottom ul > li {
+    display: inline-block;
+    width: 100%;
+    padding: 0.6rem 0;
+  }
+
+  .icone p {
+    display: inline;
+    padding: 0;
+    padding-right: 0.3rem;
+  }
+
+  .icone * {
+    display: inline;
+  }
+
+  .btn {
+    padding: 0.7rem 2.5rem;
+  }
+
+  .container {
+    padding: 3rem 1.5rem;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+
+    row-gap: 6rem;
+  }
+
+  footer * {
+    margin: 0;
+  }
+
+  footer .contatti {
+    text-align: left;
+  }
+  footer .links {
+    text-align: right;
+  }
+
+  footer .links {
+    display: flex;
+    align-items: center;
+  }
+}
