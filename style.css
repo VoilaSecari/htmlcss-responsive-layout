@@ -154,6 +154,44 @@ h2 {
   color: rgb(255, 20, 20);
 }
 
+/* ADV */
+
+.adv {
+  padding-bottom: 1rem;
+
+  /* DA CAMBIARE X TABLET --- display block */
+  display: none;
+}
+
+/* RICETTA */
+
+.ricetta h3 {
+  font-weight: 300;
+  font-size: 33px;
+
+  padding-bottom: 0.7rem;
+}
+
+.ricetta hr {
+  width: 100px;
+  border: 1px solid orange;
+
+  margin: 0;
+}
+
+.foto-ricetta {
+  width: 350px;
+  display: block;
+
+  margin: 1.5rem auto;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.ricetta p {
+  line-height: 30px;
+  padding-bottom: 1.5rem;
+}
+
 /** RESPOSIVE SMALL ---> UNTIL 480PX  **/
 
 /** RESPOSIVE SMALL+ ---> UNTIL 576PX  **/
