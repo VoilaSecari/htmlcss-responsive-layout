@@ -104,6 +104,56 @@ h2 {
   padding: 0.6rem 0;
 }
 
+/* ICONE */
+
+.icone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 3rem 0;
+}
+
+.icone * {
+  margin: 0;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: white;
+  padding: 0.7rem 1rem;
+
+  border-radius: 50px;
+  box-shadow: 1px 3px 12px rgb(157, 157, 157);
+}
+
+.icone p {
+  font-weight: 600;
+
+  /* CAMBIARE PER DSK con inline*/
+  display: none;
+}
+
+/* COLORI ICONE */
+
+.fa-facebook {
+  color: rgb(89, 95, 255);
+}
+
+.fa-twitter {
+  color: rgb(89, 172, 255);
+}
+
+.fa-instagram {
+  color: rgb(235, 37, 169);
+}
+
+.fa-pinterest,
+.fa-youtube {
+  color: rgb(255, 20, 20);
+}
+
 /** RESPOSIVE SMALL ---> UNTIL 480PX  **/
 
 /** RESPOSIVE SMALL+ ---> UNTIL 576PX  **/
