@@ -53,11 +53,17 @@ header {
   /* border: 1px dashed red; */
 }
 
+b {
+  font-weight: 500;
+}
+
 main {
   font-family: "montserrat";
   font-weight: 100;
   background-color: #efefef;
 }
+
+/* ******** CARD ******** */
 
 h6 {
   font-size: 14px;
@@ -72,6 +78,30 @@ h2 {
 
   padding-top: 0.6rem;
   padding-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 1px 3px 12px rgb(157, 157, 157);
+}
+
+/* CARD BOTTOM */
+
+.card-bottom {
+  padding: 2.3rem 2rem;
+}
+
+.card-bottom h5 {
+  font-size: 22px;
+  font-weight: 600;
+
+  padding-bottom: 1.6rem;
+}
+
+.card-bottom ul > li {
+  display: inline-block;
+  width: 100%;
+  padding: 0.6rem 0;
 }
 
 /** RESPOSIVE SMALL ---> UNTIL 480PX  **/
